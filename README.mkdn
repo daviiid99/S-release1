@@ -12,10 +12,11 @@ mkdir -p ~/android/lineage && cd ~/android/lineage
 repo init -u https://github.com/daviiid99/S-release1.git -b android
 mkdir -p .repo/local_manifests
 curl https://raw.githubusercontent.com/daviiid99/LineageOS_J5-2015/Manifest/s.xml > .repo/local_manifests/j5.xml
-source build/envsetup.sh
 repo sync
 
 rm -rf build && vendor/lineage && packages/apps/ThemePicker && packages/apps/Settings && packages/apps/Recorder && packages/apps/Jelly && packages/apps/ExactCalculator
 
 git clone -b android_build https://github.com/daviiid99/S-release1 build && git clone -b android_vendor_lineage https://github.com/daviiid99/S-release1 vendor/lineage && git clone -b android_packages_apps_Settings https://github.com/daviiid99/S-release1 packages/apps/Settings && git clone -b android_packages_apps_Recorder https://github.com/daviiid99/S-release1 packages/apps/Recorder && git clone -b android_packages_apps_Jelly https://github.com/daviiid99/S-release1 packages/apps/Jelly && git clone -b android_packags_apps_ExactCalculator https://github.com/daviiid99/S-release1 packages/apps/ExactCalculator
+
+source build/envsetup.sh
 ```
