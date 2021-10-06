@@ -8,6 +8,7 @@ To get started with Android/LineageOS, you'll need to get familiar with [Source 
 
 To initialize your local repository using the LineageOS trees, use a command like this:
 ```
+mkdir -p ~/android/lineage && cd ~/android/lineage
 repo init -u https://github.com/daviiid99/S-release1.git -b android
 mkdir -p .repo/local_manifests
 curl https://raw.githubusercontent.com/daviiid99/LineageOS_J5-2015/Manifest/s.xml > .repo/local_manifests/j5.xml
